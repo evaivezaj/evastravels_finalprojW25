@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Eva's Travels</title>
+</head>
+<body>
+    <header>
+    <div class="skip-link" id="skip">
+        <a href="#main">Skip to Main Content</a>
+    </div>
+    <div class="logo" id="logo">
+        <image src="images1/logojpeg.jpeg" alt="Eva's Travels Logo"/>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favoriteplaces.html">Favorite Places</a></li>
+            <li><a href="topsights.html">My Top Sights</a></li>
+            <li class="active"><a href="tipstricks.html">Tips & Tricks</a></li>
+        </ul>
+    </nav>
+    <h1>Tips & Tricks</h1>
+    </header>
+</body>
+<main class="container" id= "main">
+    <div class="tipsdescription" id="tipsdescription">
+        <h2>Tips & Tricks</h2>
+        <p>Traveling can be a hastle, but there are ways to reduce the stress and fully enjoy your trip! Here is what I reccomend:</p>
+    </div>
+    <div class="tips">
+        <h2>Tips</h2>
+        <ul>
+            <li>Pack light! You don't need to bring your whole closet with you</li>
+            <li>Learn a few phrases in the local language</li>
+            <li>Try the local food. You won't regret it!</li>
+            <li>Be open to new experiences</li>
+            <li>Keep an open mind and be flexible with your plans</li>
+            <li>Do your RESEARCH!</li>
+        </ul>
+    </div>
+    <div class="tricks" id="tricks">
+        <h2>Tricks</h2>
+        <ul>
+            <li>Use a packing list to make sure you don't forget anything</li>
+            <li>Use a travel app to keep track of your itinerary</li>
+            <li>Use a VPN when using public Wi-Fi</li>
+            <li>Use a travel credit card to earn points and save money</li>
+            <li>Use a travel pillow for long flights or car rides</li>
+            <li>Use a portable charger to keep your devices charged on the go</li>
+            <li> Take all your cash out while still in the US!! The withdraw rates are a lot lower here.</li>
+            <li> Double check with your bank if you need to report your travel so they don't think your card is lost</li>
+        </ul>
+    </div>
+</main>
+<div class="footer" id="footer">
+    <footer>
+        <p>Copyright @ <span id="year"></span> Eva's Travels</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <!-- Code retrieved from CodeXWorld  https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/-->
+    </div>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Eva's Travels</title>
+</head>
+<body>
+    <header>
+    <div class="skip-link" id="skip">
+        <a href="#main">Skip to Main Content</a>
+    </div>
+    <div class="logo" id="logo">
+        <image src="images1/logojpeg.jpeg" alt="Eva's Travels Logo"/>
+    </div>
+    <nav>
+        <ul>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="favoriteplaces.html">Favorite Places</a></li>
+            <li><a href="topsights.html">My Top Sights</a></li>
+            <li><a href="tipstricks.html">Tips & Tricks</a></li>
+        </ul>
+    </nav>
+    <h1> Eva's Travels</h1>
+    </header>
+</body>
+<main class="container" id= "main">
+    <div class="aboutme" id="aboutme">
+        <p>Hi! I'm Eva and I love to travel. I've been to many places around the world and I want to share my experiences with you all. Here I will be sharing some of my favorite places I've been lucky enough to visit, the top sights I've seen, and some general tips and tricks to help with your travels! I hope you enjoy my website!</p>
+        <img src="images3/IMG_2111.jpeg" alt="Sunset on the beach">
+    </div>
+
+    <div class="highlights">
+        <h2>Highlights</h2>
+    </div>
+    <div class="highlights-images">
+         <div class="Croatia" id="Croatia">
+            <h3>Croatia</h3>
+            <div class="croatia-image" id="croatia-image">
+                <a href="images3/IMG_1039.jpeg" data-lightbox="croatia" data-title="Dubrovnik">
+                <img src="images3/IMG_1039.jpeg" alt="Water seen between branches of a tree"/>
+                </a>
+            </div>
+            <p>Dubrovnik</p>
+         </div>
+         <div class="Albania" id="Albania">
+            <h3>Albania</h3>
+            <div class="albania-image" id="albania">
+                <a href="images1/IMG_7205.jpeg" data-lightbox="albania" data-title="Albania">
+            <img src="images1/IMG_7205.jpeg" alt="Ocean seen from balcony"/>
+                </a>
+            </div>
+            <p>Green Coast</p>
+         </div>
+         <div class="Bosnia & Herzegovina" id="Bosnia">
+            <h3>Bosnia & Herzegovina</h3>
+            <div class="bosnia-image" id="bosnia-image">
+                <a href="images3/IMG_1905.jpeg" data-lightbox="bosnia" data-title="Bosnia">
+                    <img src="images3/IMG_1905.jpeg" alt="Krevice Falls"/>
+                </a>
+            </div>
+            <p>Krevice Falls</p>
+         </div>
+    </div>
+</main>
+<script src="js/script.js"></script>
+<div class="footer" id="footer">
+    <footer>
+        <p>Copyright @ <span id="year"></span> Eva's Travels</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <!-- Code retrieved from CodeXWorld  https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/-->
+    </div>
+</html>

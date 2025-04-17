@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Eva's Travels</title>
+</head>
+<body>
+    <header>
+    <div class="skip-link" id="skip">
+        <a href="#main">Skip to Main Content</a>
+    </div>
+    <div class="logo" id="logo">
+        <image src="images1/logojpeg.jpeg" alt="Eva's Travels Logo"/>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="favoriteplaces.html">Favorite Places</a></li>
+            <li class="active"><a href="topsights.html">My Top Sights</a></li>
+            <li><a href="tipstricks.html">Tips & Tricks</a></li>
+        </ul>
+    </nav>
+    <h1>My Top Sights</h1>
+    </header>
+</body>
+<main class="container" id="main">
+    <div class="description" id="description">
+        <h2>Top Sights</h2>
+        <p>Here are some of my favorite sights I've seen while traveling!</p>
+    </div>
+    <gallery class="gallery" id="gallery">
+    <div class="cemi" id="cemi">
+        <a href="images2/IMG_2428.jpeg" data-lightbox="cemi" data-title="Cem">
+            <img src="images2/IMG_2428.jpeg" alt="River flowing between two mountains"/>
+        </a>
+    </div>
+    <div class="green coast" id="green coast">
+        <a href="images1/IMG_7205.jpeg" data-lightbox="green coast" data-title="Green Coast">
+            <img src="images1/IMG_7205.jpeg" alt="Ocean view from balcony"/>
+        </a>
+    </div>
+    <div class="kotor" id="kotor">
+        <a href="images2/IMG_9046.jpeg" data-lightbox="kotor" data-title="Kotor">
+            <img src="images2/IMG_9046.jpeg" alt="Black cat on steps"/>
+        </a>
+    </div>
+    <div class="krevicefalls" id="krevicefalls">
+        <a href="images3/IMG_1905.jpeg" data-lightbox="krevicefalls" data-title="Krevice Falls">
+            <img src="images3/IMG_1905.jpeg" alt="Krevice Falls"/>
+        </a>
+    </div>
+    <div class="ulqin" id="ulqin">
+        <a href="images3/IMG_0878.jpeg" data-lightbox="ulqin" data-title="Ulqin">
+            <img src="images3/IMG_0878.jpeg" alt="Swing chair on beach"/>
+        </a>
+    </div>
+    <div class="ksamil" id="ksamil">
+        <a href="images1/IMG_7414.jpeg" data-lightbox="ksamil" data-title="Ksamil">
+            <img src="images1/IMG_7414.jpeg" alt="Ocean view from restaurant"/>
+        </a>
+    </div>
+    <div class="mostar" id="mostar">
+        <a href="images3/IMG_2036.jpeg" data-lightbox="mostar" data-title="Mostar">
+            <img src="images3/IMG_2036.jpeg" alt="Mostar city"/>
+        </a>
+    </div>
+    <div class="dubrovnik" id="dubrovnik">
+        <a href="images3/IMG_1143.jpeg" data-lightbox="dubrovnik" data-title="Dubrovnik">
+            <img src="images3/IMG_1143.jpeg" alt="Dubrovnik old town"/>
+        </a>
+    </div>
+    </gallery>
+</main>
+<script src="js/script.js"></script>
+<div class="footer" id="footer">
+    <footer>
+        <p>Copyright @ <span id="year"></span> Eva's Travels</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+    <!-- Code retrieved from CodeXWorld  https://www.codexworld.com/how-to/get-current-year-to-display-dynamic-year-in-copyright-using-javascript/-->
+</div>
+</html>
