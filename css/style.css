@@ -664,4 +664,45 @@ body.lb-disable-scrolling {
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
   }
-  
+
+html{
+    scroll-behavior: smooth;
+}
+/* from https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section1 */
+
+/* // https://stackoverflow.com/questions/12712592/how-to-make-a-small-image-move-from-one-side-of-the-screen-to-the-other-with-js */
+.airplane {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+#airplane-image {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -100px;
+    width: 50%;
+    height: auto;
+}
+
+.airplane {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #airplane-image {
+        animation: none;
+        transition: none;
+        left: 0;
+        transform: translateY(-50%);
+    }
+}
+
+/* https://stackoverflow.com/questions/58931615/disable-animation-with-prefers-reduced-motion */
