@@ -43,6 +43,8 @@ body{
 
 nav a:hover, nav a:focus {
     font-weight: bold;
+    font-size: 25px;
+    color: #425aac;
 }
 .skip-link {
     position: absolute;
@@ -53,8 +55,9 @@ nav a:hover, nav a:focus {
     top: 20px;
 }
 .skip-link {
-    background: #ffffff;
+    background: #1b2551;
     font-size: 30px;
+    color: #ffffff;
 }
 
 nav{
@@ -535,7 +538,6 @@ body.lb-disable-scrolling {
     width: 32px;
     height: 32px;
     margin: 0 auto;
-    background: url(../images/loading.gif) no-repeat;
   }
   
   .lb-nav {
@@ -553,51 +555,8 @@ body.lb-disable-scrolling {
   
   .lb-nav a {
     outline: none;
-    background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
   }
-  
-  .lb-prev, .lb-next {
-    height: 100%;
-    cursor: pointer;
-    display: block;
-  }
-  
-  .lb-nav a.lb-prev {
-    width: 34%;
-    left: 0;
-    float: left;
-    background: url(../images/prev.png) left 48% no-repeat;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s;
-    -o-transition: opacity 0.6s;
-    transition: opacity 0.6s;
-  }
-  
-  .lb-nav a.lb-prev:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-  }
-  
-  .lb-nav a.lb-next {
-    width: 64%;
-    right: 0;
-    float: right;
-    background: url(../images/next.png) right 48% no-repeat;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
-    opacity: 0;
-    -webkit-transition: opacity 0.6s;
-    -moz-transition: opacity 0.6s;
-    -o-transition: opacity 0.6s;
-    transition: opacity 0.6s;
-  }
-  
-  .lb-nav a.lb-next:hover {
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
-    opacity: 1;
-  }
-  
+
   .lb-dataContainer {
     margin: 0 auto;
     padding-top: 5px;
@@ -643,12 +602,11 @@ body.lb-disable-scrolling {
     color: #999999;
   }
   
-  .lb-data .lb-close {
+  .lb-data {
     display: block;
-    float: right;
+    float: left;
     width: 30px;
     height: 30px;
-    background: url(../images/close.png) top right no-repeat;
     text-align: right;
     outline: none;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
@@ -659,7 +617,7 @@ body.lb-disable-scrolling {
     transition: opacity 0.2s;
   }
   
-  .lb-data .lb-close:hover {
+  .lb-data {
     cursor: pointer;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
     opacity: 1;
